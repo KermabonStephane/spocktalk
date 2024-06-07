@@ -46,9 +46,9 @@ class FibonacciDataDrivenSpec extends Specification {
         def result = fibonacci.getSequenceValue(input)
 
         then: 'The result is as expected'
-        result == output
+        result == expected
 
         where:  'Inputs and expected result are'
-        [input, output] << [[3, 2], [4, 3], [5, 5], [6, 8]]
+        [input, expected] << [[3, 2], [4, 3], [5, 5], [6, 8]]
     }
 }

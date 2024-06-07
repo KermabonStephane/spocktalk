@@ -1,4 +1,4 @@
-package org.demis27.stubAndMock;
+package org.demis27.stubMockAndSpy;
 
 import lombok.SneakyThrows;
 import org.demis27.Fibonacci;
