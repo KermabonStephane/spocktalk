@@ -22,12 +22,12 @@ class FibonacciFixtureSpec extends Specification {
     // ---------------------------
 
     // runs once -  before the first feature method
-    // JUnit @BeforeClass
+    // JUnit 5 @BeforeAll
     def setupSpec() {
     }
 
     // runs before every feature method
-    // JUnit @Before
+    // JUnit 5 @BeforeEach
     def setup() {
     }
 
