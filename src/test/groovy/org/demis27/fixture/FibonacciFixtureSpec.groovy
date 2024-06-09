@@ -52,6 +52,17 @@ class FibonacciFixtureSpec extends Specification {
         equals(fibonacci.getSequenceValue(5), 5)
     }
 
+    def 'test simple field'() {
+        expect:
+        hello == 'HELLO'
+    }
+
+
+    def 'test modified simple field'() {
+        expect:
+        hello == 'GOODBYE'
+    }
+
     // ---------------------------
     // helper methods
     // ---------------------------
