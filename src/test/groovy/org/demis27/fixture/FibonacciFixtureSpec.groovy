@@ -1,16 +1,19 @@
 package org.demis27.fixture
 
 import org.demis27.Fibonacci
+import org.spockframework.runtime.model.parallel.ExecutionMode
+import spock.lang.Execution
 import spock.lang.Shared
 import spock.lang.Specification
 
 // Specification
 // JUnit Test class
+@Execution(ExecutionMode.SAME_THREAD)
 class FibonacciFixtureSpec extends Specification {
     // ---------------------------
     // Fields
     // ---------------------------
-    // Simple field
+    // Simple field, always re-initialized before each feature
     String hello = 'HELLO'
     // Shared fields between test
     @Shared Fibonacci fibonacci = new Fibonacci()
@@ -57,10 +60,17 @@ class FibonacciFixtureSpec extends Specification {
         hello == 'HELLO'
     }
 
+    def 'test modify simple field'() {
+        when:
+        hello = 'GOODBYE'
 
-    def 'test modified simple field'() {
-        expect:
+        then:
         hello == 'GOODBYE'
+    }
+
+    def 'test not modified simple field'() {
+        expect:
+        hello == 'HELLO'
     }
 
     // ---------------------------
