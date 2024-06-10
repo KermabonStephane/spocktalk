@@ -6,7 +6,7 @@ import java.util.stream.IntStream;
 
 public class FibonacciSequence {
 
-    private Fibonacci fibonacci;
+    private final Fibonacci fibonacci;
 
     public FibonacciSequence(Fibonacci fibonacci) {
         this.fibonacci = fibonacci;
