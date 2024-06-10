@@ -4,7 +4,8 @@ public class Fibonacci {
 
     public int getSequenceValue(int sequenceIndex) throws FibonacciException {
         if (sequenceIndex < 0) {
-            throw new FibonacciException(String.format("%d is negative, fibonacci sequence start at zero", sequenceIndex));
+            throw new FibonacciException(
+                    String.format("%d is negative, fibonacci sequence start at zero", sequenceIndex));
         }
         if (sequenceIndex == 0) {
             return 0;
@@ -12,6 +13,7 @@ public class Fibonacci {
         if (sequenceIndex == 1) {
             return 1;
         }
-        return getSequenceValue(sequenceIndex -1) + getSequenceValue(sequenceIndex - 2);
+        return getSequenceValue(sequenceIndex -1)
+                + getSequenceValue(sequenceIndex - 2);
     }
 }
