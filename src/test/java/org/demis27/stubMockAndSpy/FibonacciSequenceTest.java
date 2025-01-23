@@ -22,7 +22,7 @@ class FibonacciSequenceTest {
         FibonacciSequence fibonacciSequence = new FibonacciSequence(fibonacci);
 
         // and: 'stub fibonacci'
-        Mockito.when(fibonacci.getSequenceValue(Mockito.anyInt())).thenReturn(0, 1, 1);
+        Mockito.when(fibonacci.of(Mockito.anyInt())).thenReturn(0, 1, 1);
 
         // when:
         List<Integer> sequence = fibonacciSequence.getSequence(0, 2);
@@ -39,13 +39,13 @@ class FibonacciSequenceTest {
         FibonacciSequence fibonacciSequence = new FibonacciSequence(fibonacci);
 
         // and:
-        Mockito.when(fibonacci.getSequenceValue(Mockito.anyInt())).thenReturn(0, 1, 1);
+        Mockito.when(fibonacci.of(Mockito.anyInt())).thenReturn(0, 1, 1);
 
         // when:
         List<Integer> sequence = fibonacciSequence.getSequence(0, 2);
 
         // then:
-        Mockito.verify(fibonacci, Mockito.times(3)).getSequenceValue(Mockito.anyInt());
+        Mockito.verify(fibonacci, Mockito.times(3)).of(Mockito.anyInt());
         Assertions.assertIterableEquals(List.of(0, 1, 1), sequence);
     }
 
@@ -60,7 +60,7 @@ class FibonacciSequenceTest {
         fibonacciSequence.getSequence(0, 2);
 
         // then:
-        Mockito.verify(fibonacci, Mockito.times(3)).getSequenceValue(Mockito.anyInt());
+        Mockito.verify(fibonacci, Mockito.times(3)).of(Mockito.anyInt());
     }
 
     @SneakyThrows
@@ -75,9 +75,9 @@ class FibonacciSequenceTest {
         fibonacciSequence.getSequence(0, 2);
 
         // then:
-        Mockito.verify(spy, Mockito.times(2)).getSequenceValue(0);
-        Mockito.verify(spy, Mockito.times(2)).getSequenceValue(1);
-        Mockito.verify(spy, Mockito.times(1)).getSequenceValue(2);
+        Mockito.verify(spy, Mockito.times(2)).of(0);
+        Mockito.verify(spy, Mockito.times(2)).of(1);
+        Mockito.verify(spy, Mockito.times(1)).of(2);
     }
 
 }

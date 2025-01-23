@@ -2,7 +2,7 @@ package org.demis27;
 
 public class Fibonacci {
 
-    public int getSequenceValue(int sequenceIndex) throws FibonacciException {
+    public int of(int sequenceIndex) throws FibonacciException {
         if (sequenceIndex < 0) {
             throw new FibonacciException(
                     String.format("%d is negative, fibonacci sequence start at zero", sequenceIndex));
@@ -13,7 +13,7 @@ public class Fibonacci {
         if (sequenceIndex == 1) {
             return 1;
         }
-        return getSequenceValue(sequenceIndex -1)
-                + getSequenceValue(sequenceIndex - 2);
+        return of(sequenceIndex -1)
+                + of(sequenceIndex - 2);
     }
 }

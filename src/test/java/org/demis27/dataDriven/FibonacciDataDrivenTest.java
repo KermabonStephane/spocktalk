@@ -16,7 +16,7 @@ class FibonacciDataDrivenTest {
         Fibonacci fibonacci = new Fibonacci();
 
         // when: 'I call the value for the input index'
-        int result = fibonacci.getSequenceValue(input);
+        int result = fibonacci.of(input);
 
         // then: 'The result is as expected'
         Assertions.assertEquals(expected, result);

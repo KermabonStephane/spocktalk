@@ -13,7 +13,7 @@ class FibonacciSequenceSpec extends Specification {
         FibonacciSequence fibonacciSequence = new FibonacciSequence(fibonacci)
 
         and: 'Declare what the fibonacci stub returns'
-        fibonacci.getSequenceValue(_) >>> [0, 1, 1]
+        fibonacci.of(_) >>> [0, 1, 1]
 
         when: 'Call the fibonacci sequence'
         def sequence = fibonacciSequence.getSequence(0, 2)
@@ -32,7 +32,7 @@ class FibonacciSequenceSpec extends Specification {
         fibonacciSequence.getSequence(0, 2)
 
         then: 'We call three time the fibonacci object'
-        3 * fibonacci.getSequenceValue(_)
+        3 * fibonacci.of(_)
     }
 
     def 'test fibonacci sequence mock and stub'() {
@@ -45,7 +45,7 @@ class FibonacciSequenceSpec extends Specification {
         def sequence = fibonacciSequence.getSequence(0, 2)
 
         then: 'Declare what the fibonacci stub returns and check how many time it call'
-        3 * fibonacci.getSequenceValue(_) >>> [0, 1, 1]
+        3 * fibonacci.of(_) >>> [0, 1, 1]
 
         and: 'We have the right list of third fibonacci elements'
         sequence == [0, 1, 1]
@@ -61,10 +61,10 @@ class FibonacciSequenceSpec extends Specification {
         fibonacciSequence.getSequence(0, 2)
 
         then: 'We call two times the sequence value for position 0'
-        2 * fibonacci.getSequenceValue(0)
+        2 * fibonacci.of(0)
         and: 'We call two times the sequence value for position 1'
-        2 * fibonacci.getSequenceValue(1)
+        2 * fibonacci.of(1)
         and: 'We call one time the sequence value for position 2'
-        1 * fibonacci.getSequenceValue(2)
+        1 * fibonacci.of(2)
     }
 }

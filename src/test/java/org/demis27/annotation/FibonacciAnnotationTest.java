@@ -31,6 +31,6 @@ public class FibonacciAnnotationTest {
     @Test
     void testFibonacci() {
         // given, when, then, expect, cleanup, and where
-        Assertions.assertEquals(fibonacci.getSequenceValue(5), 5);
+        Assertions.assertEquals(fibonacci.of(5), 5);
     }
 }

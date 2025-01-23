@@ -23,7 +23,7 @@ public class FibonacciSequence {
 
         IntStream.rangeClosed(start, end).forEach(value -> {
             try {
-                result.add(fibonacci.getSequenceValue(value));
+                result.add(fibonacci.of(value));
             } catch (FibonacciException e) {
                 // nothing to do
             }

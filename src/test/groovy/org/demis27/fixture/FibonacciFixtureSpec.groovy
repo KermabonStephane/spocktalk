@@ -52,7 +52,7 @@ class FibonacciFixtureSpec extends Specification {
     def 'test fibonacci'() {
         // given, when, then, expect, cleanup, and where
         expect:
-        equals(fibonacci.getSequenceValue(5), 5)
+        equals(fibonacci.of(5), 5)
     }
 
     def 'test simple field'() {

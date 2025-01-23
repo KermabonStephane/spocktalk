@@ -16,7 +16,7 @@ public class FibonacciExceptionTest {
 
         // When:
         Exception exception = Assertions.assertThrows(FibonacciException.class, () -> {
-            fibonacci.getSequenceValue(-3);
+            fibonacci.of(-3);
         });
     }
 

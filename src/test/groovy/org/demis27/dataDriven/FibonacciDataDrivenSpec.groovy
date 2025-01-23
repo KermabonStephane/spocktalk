@@ -10,7 +10,7 @@ class FibonacciDataDrivenSpec extends Specification {
         Fibonacci fibonacci = new Fibonacci()
 
         when: 'I call the value for the input index'
-        def result = fibonacci.getSequenceValue(input)
+        def result = fibonacci.of(input)
 
         then: 'The result is as expected'
         result == expected
@@ -28,7 +28,7 @@ class FibonacciDataDrivenSpec extends Specification {
         Fibonacci fibonacci = new Fibonacci()
 
         when: 'I call the value for the input index'
-        def result = fibonacci.getSequenceValue(input)
+        def result = fibonacci.of(input)
 
         then: 'The result is as expected'
         result == expected
@@ -43,7 +43,7 @@ class FibonacciDataDrivenSpec extends Specification {
         Fibonacci fibonacci = new Fibonacci()
 
         when: 'I call the value for the input index'
-        def result = fibonacci.getSequenceValue(input)
+        def result = fibonacci.of(input)
 
         then: 'The result is as expected'
         result == expected

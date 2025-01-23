@@ -14,7 +14,7 @@ class SimpleFibonacciTest {
         Fibonacci fibonacci = new Fibonacci();
 
         // when: 'I call the value for the index 6'
-        int result = fibonacci.getSequenceValue(6);
+        int result = fibonacci.of(6);
 
         // then: 'I expected the result is 8'
         Assertions.assertEquals(8, result);
@@ -27,6 +27,6 @@ class SimpleFibonacciTest {
         Fibonacci fibonacci = new Fibonacci();
 
         // expect: 'I expected the result is 8'
-        Assertions.assertEquals(8, fibonacci.getSequenceValue(6));
+        Assertions.assertEquals(8, fibonacci.of(6));
     }
 }

@@ -10,12 +10,12 @@ public class DirtyTest {
     @Test
     void testFibonacciForTwoValuesAndTestException() {
         Fibonacci fibonacci = new Fibonacci();
-        int result = fibonacci.getSequenceValue(6);
+        int result = fibonacci.of(6);
         Assertions.assertEquals(8, result);
-        result = fibonacci.getSequenceValue(5);
+        result = fibonacci.of(5);
         Assertions.assertEquals(5, result);
         Exception exception = Assertions.assertThrows(FibonacciException.class, () -> {
-            fibonacci.getSequenceValue(-3);
+            fibonacci.of(-3);
         });
         FibonacciSequence fibonacciSequence = new FibonacciSequence(fibonacci);
         exception = Assertions.assertThrows(FibonacciSequenceException.class, () -> fibonacciSequence.getSequence(-1, 0));

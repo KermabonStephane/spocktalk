@@ -13,7 +13,7 @@ class FibonacciExceptionSpec extends Specification{
         Fibonacci fibonacci = new Fibonacci()
 
         when: 'Call with an invalid index'
-        fibonacci.getSequenceValue(-3)
+        fibonacci.of(-3)
 
         then: 'An exception is thrown'
         thrown FibonacciException
