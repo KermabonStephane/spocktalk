@@ -1,4 +1,4 @@
-# Spock Talk Exercises
+# Spock Framework
 
 Welcome to the **Spock Framework** exercises repository. This project is designed to help you learn and practice the [Spock Framework](https://spockframework.org/) for Java testing.
 
