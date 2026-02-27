@@ -5,7 +5,7 @@ import spock.lang.Execution
 import spock.lang.Specification
 
 @Execution(ExecutionMode.SAME_THREAD)
-class SolutionStackSpec extends Specification {
+class StackSpec extends Specification {
 
     static Stack stack
 
