@@ -82,4 +82,4 @@ Now it's your turn. Open `src/test/groovy/org/demis27/simple/ExerciceSimpleSpec.
 You should test that `fibonacci.of(6)` returns `8`.
 
 ---
-[Next Lesson: Data-Driven Testing ->](./02-data-driven.md) (Coming soon!)
+[Next Lesson: Data-Driven Testing ->](./02-data-driven.md)

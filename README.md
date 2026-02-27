@@ -16,6 +16,7 @@ Each version contains the same set of exercises but is configured to run on the 
 
 Start your journey here:
 - **[Lesson 1: Spock Blocks (Given, When, Then, Expect)](./lessons/01-blocks.md)**
+- **[Lesson 2: Data-Driven Testing](./lessons/02-data-driven.md)**
 
 ## How to use this repository
 
