@@ -81,4 +81,4 @@ Open `src/test/groovy/org/demis27/stubMockAndSpy/ExercicePartialMockSpec.groovy`
 Use a **Spy** to override the `doMultiply` method and verify that the `multiply` method uses your stubbed value.
 
 ---
-[<- Previous Lesson: Data-Driven Testing](./02-data-driven.md) | [Next Lesson: Exceptions ->](./04-exceptions.md) (Coming soon!)
+[<- Previous Lesson: Data-Driven Testing](./02-data-driven.md) | [Next Lesson: Exception Handling ->](./04-exceptions.md)
