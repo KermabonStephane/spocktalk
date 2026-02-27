@@ -3,7 +3,7 @@ package org.demis27.stubMockAndSpy
 import org.demis27.PartialMock
 import spock.lang.Specification
 
-class PartialMockSpec extends Specification {
+class SolutionPartialMockSpec extends Specification {
 
     def 'partial mock with Spy'() {
         given: 'Add a partial mock on the PartialMock object'

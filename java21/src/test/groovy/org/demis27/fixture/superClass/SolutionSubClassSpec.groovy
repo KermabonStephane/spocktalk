@@ -4,7 +4,7 @@ import groovy.util.logging.Slf4j
 import spock.lang.Shared
 
 @Slf4j
-class SubClassSpec extends SuperClassSpec {
+class SolutionSubClassSpec extends SolutionSuperClassSpec {
 
     @Shared Integer d = 1
     static Integer e = 1

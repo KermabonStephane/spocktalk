@@ -5,7 +5,7 @@ import spock.lang.Shared
 import spock.lang.Specification
 
 @Slf4j
-class SuperClassSpec extends Specification {
+class SolutionSuperClassSpec extends Specification {
 
     @Shared Integer a = 1
     static Integer b = 1
