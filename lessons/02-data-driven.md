@@ -86,4 +86,4 @@ Open `src/test/groovy/org/demis27/dataDriven/ExerciceDateDataDrivenSpec.groovy`.
 In this exercise, you will test the `plusDays(1)` method of `java.time.LocalDate`. Use a data table to verify transitions like leap years or month ends.
 
 ---
-[<- Previous Lesson: Spock Blocks](./01-blocks.md) | [Next Lesson: Exceptions ->](./03-exceptions.md) (Coming soon!)
+[<- Previous Lesson: Spock Blocks](./01-blocks.md) | [Next Lesson: Stubs, Mocks, and Spies ->](./03-stubs-mocks-spies.md)
