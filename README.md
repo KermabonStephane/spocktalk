@@ -21,6 +21,7 @@ Start your journey here:
 - **[Lesson 4: Exception Handling](./lessons/04-exceptions.md)**
 - **[Lesson 5: Lifecycle and Parallelism](./lessons/05-lifecycle-parallelism.md)**
 - **[Lesson 6: Fixture Inheritance and Execution Order](./lessons/06-inheritance-order.md)**
+- **[Lesson 7: Specification Fields](./lessons/07-specification-fields.md)**
 
 ## How to use this repository
 

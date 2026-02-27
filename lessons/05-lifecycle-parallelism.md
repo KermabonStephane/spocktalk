@@ -27,11 +27,11 @@ A Spock `Specification` has a well-defined lifecycle. Understanding this is cruc
 
 By default, Spock executes feature methods in the order they appear in the file.
 
-If you have a shared state (like a `@Shared` list or a `static` stack), the order of execution matters. Look at `parallel/SolutionStackSpec.groovy`:
+If you have a shared state (like a `@Shared` list or a `static` stack), the order of execution matters. Look at `parallel/StackSpec.groovy`:
 
 ```groovy
 @Execution(ExecutionMode.SAME_THREAD)
-class SolutionStackSpec extends Specification {
+class StackSpec extends Specification {
     static Stack stack
     
     def setupSpec() {
@@ -80,11 +80,11 @@ class MyParallelSpec extends Specification {
 
 There is no formal exercise for this lesson. Instead, we invite you to:
 
-1.  Open `java17/src/test/groovy/org/demis27/parallel/SolutionStackSpec.groovy`.
+1.  Open `java17/src/test/groovy/org/demis27/parallel/StackSpec.groovy`.
 2.  Run the tests. They should pass because they are in `SAME_THREAD`.
 3.  Change the annotation to `@Execution(ExecutionMode.CONCURRENT)`.
 4.  Run the tests again multiple times. Observe how they might fail because `pop()` and `size()` are fighting for the same static object.
-5.  Open `java17/src/test/groovy/org/demis27/fixture/SolutionFibonacciFixtureSpec.groovy` to see a complete example of fixtures and field management.
+5.  Open `java17/src/test/groovy/org/demis27/fixture/FixtureSpec.groovy` to see a complete example of fixtures and field management.
 
 ---
 [<- Previous Lesson: Exception Handling](./04-exceptions.md) | [Next Lesson: Fixture Inheritance and Execution Order ->](./06-inheritance-order.md)

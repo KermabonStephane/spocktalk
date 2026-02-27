@@ -43,13 +43,13 @@ As we learned in Lesson 5, instance fields are re-initialized before every featu
 
 To see this behavior in action, we've provided a set of classes with debug logging in `src/test/groovy/org/demis27/fixture/superClass/`:
 
-1.  **`SolutionSuperClassSpec.groovy`**: Defines the base lifecycle methods.
-2.  **`SolutionSubClassSpec.groovy`**: Inherits from the above and adds its own logs.
+1.  **`SuperClassSpec.groovy`**: Defines the base lifecycle methods.
+2.  **`SubClassSpec.groovy`**: Inherits from the above and adds its own logs.
 
 ### Steps to Observe:
 
-1.  Run the tests for `SolutionSubClassSpec`.
-2.  Look at the console output (or use `mvn test -Dtest=SolutionSubClassSpec`).
+1.  Run the tests for `SubClassSpec`.
+2.  Look at the console output (or use `mvn test -Dtest=SubClassSpec`).
 3.  You will notice the following interleaved sequence in the logs:
     ```text
     Super class setupSpec
@@ -65,17 +65,5 @@ To see this behavior in action, we've provided a set of classes with debug loggi
 
 ---
 
-## Summary of the Journey 🏁
-
-Congratulations! You have completed the Spock Framework tutorial. You now know:
-*   How to write **Specifications** and use **BDD blocks** (`given`, `when`, `then`, `expect`).
-*   How to perform **Data-Driven testing** to cover multiple scenarios with minimal code.
-*   How to use **Stubs, Mocks, and Spies** to isolate your code and verify interactions.
-*   How to handle **Exceptions** gracefully.
-*   How to manage the **Lifecycle** and **Parallelism** of your tests.
-*   How **Inheritance** affects the execution of your test fixtures.
-
-Happy testing with Spock! 🖖
-
 ---
-[<- Previous Lesson: Lifecycle and Parallelism](./05-lifecycle-parallelism.md)
+[<- Previous Lesson: Lifecycle and Parallelism](./05-lifecycle-parallelism.md) | [Next Lesson: Specification Fields ->](./07-specification-fields.md)
