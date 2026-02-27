@@ -1,8 +1,9 @@
 package org.demis27.annotation;
 
 import org.demis27.Fibonacci;
-import org.demis27.FibonacciException;
 import org.junit.jupiter.api.*;
+
+import lombok.SneakyThrows;
 
 public class FibonacciAnnotationTest {
 
@@ -23,12 +24,13 @@ public class FibonacciAnnotationTest {
     }
 
     @AfterAll
-    static  void cleanupAll() {
+    static void cleanupAll() {
         fibonacci = null;
     }
 
     @Test
-    void testFibonacci() throws FibonacciException {
+    @SneakyThrows
+    void testFibonacci() {
         // given, when, then, expect, cleanup, and where
         Assertions.assertEquals(fibonacci.of(5), 5);
     }

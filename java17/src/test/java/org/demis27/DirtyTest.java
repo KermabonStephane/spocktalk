@@ -3,10 +3,13 @@ package org.demis27;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import lombok.SneakyThrows;
+
 public class DirtyTest {
 
     @Test
-    void testFibonacciForTwoValuesAndTestException() throws FibonacciException {
+    @SneakyThrows
+    void testFibonacciForTwoValuesAndTestException() {
         Fibonacci fibonacci = new Fibonacci();
         int result = fibonacci.of(6);
         Assertions.assertEquals(8, result);
@@ -16,7 +19,8 @@ public class DirtyTest {
             fibonacci.of(-3);
         });
         FibonacciSequence fibonacciSequence = new FibonacciSequence(fibonacci);
-        exception = Assertions.assertThrows(FibonacciSequenceException.class, () -> fibonacciSequence.getSequence(-1, 0));
+        exception = Assertions.assertThrows(FibonacciSequenceException.class,
+                () -> fibonacciSequence.getSequence(-1, 0));
         Assertions.assertEquals("start and end must be positives", exception.getMessage());
     }
 

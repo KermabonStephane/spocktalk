@@ -5,10 +5,13 @@ import org.demis27.FibonacciException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import lombok.SneakyThrows;
+
 class FibonacciTest {
 
     @Test
-    void testFibonacci() throws FibonacciException {
+    @SneakyThrows
+    void testFibonacci() {
         // given: 'I create a Fibonacci object'
         Fibonacci fibonacci = new Fibonacci();
 
@@ -20,7 +23,8 @@ class FibonacciTest {
     }
 
     @Test
-    void testFibonacciShort() throws FibonacciException {
+    @SneakyThrows
+    void testFibonacciShort() {
         // given: 'I create a Fibonacci object'
         Fibonacci fibonacci = new Fibonacci();
 

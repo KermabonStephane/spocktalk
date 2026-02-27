@@ -1,14 +1,14 @@
 package org.demis27.stubMockAndSpy;
 
 import org.demis27.Fibonacci;
-import org.demis27.FibonacciException;
 import org.demis27.FibonacciSequence;
-import org.demis27.FibonacciSequenceException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
+
+import lombok.SneakyThrows;
 
 import java.util.List;
 
@@ -16,7 +16,8 @@ import java.util.List;
 class FibonacciSequenceTest {
 
     @Test
-    void fibonacciSequenceStubTest() throws FibonacciException, FibonacciSequenceException {
+    @SneakyThrows
+    void fibonacciSequenceStubTest() {
         // given:
         Fibonacci fibonacci = Mockito.mock(Fibonacci.class);
         FibonacciSequence fibonacciSequence = new FibonacciSequence(fibonacci);
@@ -32,7 +33,8 @@ class FibonacciSequenceTest {
     }
 
     @Test
-    void fibonacciSequenceMockTest () throws FibonacciSequenceException, FibonacciException {
+    @SneakyThrows
+    void fibonacciSequenceMockTest() {
         // given:
         Fibonacci fibonacci = Mockito.mock(Fibonacci.class);
         FibonacciSequence fibonacciSequence = new FibonacciSequence(fibonacci);
@@ -49,7 +51,8 @@ class FibonacciSequenceTest {
     }
 
     @Test
-    void fibonacciSequenceMockAndStubTest () throws FibonacciSequenceException, FibonacciException {
+    @SneakyThrows
+    void fibonacciSequenceMockAndStubTest() {
         // given:
         Fibonacci fibonacci = Mockito.mock(Fibonacci.class);
         FibonacciSequence fibonacciSequence = new FibonacciSequence(fibonacci);
@@ -62,7 +65,8 @@ class FibonacciSequenceTest {
     }
 
     @Test
-    void fibonacciSequenceSpyTest () throws FibonacciSequenceException, FibonacciException {
+    @SneakyThrows
+    void fibonacciSequenceSpyTest() {
         // given:
         Fibonacci fibonacci = new Fibonacci();
         Fibonacci spy = Mockito.spy(fibonacci);

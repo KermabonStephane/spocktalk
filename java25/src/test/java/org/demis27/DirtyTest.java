@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 public class DirtyTest {
 
-    @SneakyThrows
+    @SneakyThrows(FibonacciException.class)
     @Test
     void testFibonacciForTwoValuesAndTestException() {
         Fibonacci fibonacci = new Fibonacci();
