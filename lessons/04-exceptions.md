@@ -62,4 +62,4 @@ Open `src/test/groovy/org/demis27/exception/ExerciceExceptionSpec.groovy`.
 2.  Implement a test that verifies `FibonacciSequence.getSequence(-1, 0)` throws a `FibonacciSequenceException` AND check that the message is exactly `'start and end must be positives'`.
 
 ---
-[<- Previous Lesson: Stubs, Mocks, and Spies](./03-stubs-mocks-spies.md) | [Next Lesson: To be continued... ->]
+[<- Previous Lesson: Stubs, Mocks, and Spies](./03-stubs-mocks-spies.md) | [Next Lesson: Lifecycle and Parallelism ->](./05-lifecycle-parallelism.md)

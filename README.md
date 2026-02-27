@@ -19,6 +19,8 @@ Start your journey here:
 - **[Lesson 2: Data-Driven Testing](./lessons/02-data-driven.md)**
 - **[Lesson 3: Stubs, Mocks, and Spies](./lessons/03-stubs-mocks-spies.md)**
 - **[Lesson 4: Exception Handling](./lessons/04-exceptions.md)**
+- **[Lesson 5: Lifecycle and Parallelism](./lessons/05-lifecycle-parallelism.md)**
+- **[Lesson 6: Fixture Inheritance and Execution Order](./lessons/06-inheritance-order.md)**
 
 ## How to use this repository
 
