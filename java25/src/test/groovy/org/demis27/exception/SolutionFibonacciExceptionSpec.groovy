@@ -6,7 +6,7 @@ import org.demis27.FibonacciSequence
 import org.demis27.FibonacciSequenceException
 import spock.lang.Specification
 
-class FibonacciExceptionSpec extends Specification{
+class SolutionFibonacciExceptionSpec extends Specification{
 
     def 'test exception' () {
         given: 'Create a fibonacci object'

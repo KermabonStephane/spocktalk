@@ -9,7 +9,7 @@ import spock.lang.Specification
 // Specification
 // JUnit Test class
 @Execution(ExecutionMode.SAME_THREAD)
-class FibonacciFixtureSpec extends Specification {
+class SolutionFibonacciFixtureSpec extends Specification {
     // ---------------------------
     // Fields
     // ---------------------------

@@ -5,7 +5,7 @@ import spock.lang.Specification
 import java.time.LocalDate
 
 
-class DateDataDrivenSpec extends Specification {
+class SolutionDateDataDrivenSpec extends Specification {
 
     def 'date plus one day'() {
         when: 'add a day'
