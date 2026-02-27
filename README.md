@@ -12,6 +12,11 @@ This repository is organized into three main versions, each targeting a specific
 
 Each version contains the same set of exercises but is configured to run on the respective Java Runtime.
 
+## Lessons
+
+Start your journey here:
+- **[Lesson 1: Spock Blocks (Given, When, Then, Expect)](./lessons/01-blocks.md)**
+
 ## How to use this repository
 
 ### Spock Exercises
