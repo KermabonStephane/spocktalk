@@ -22,6 +22,7 @@ Start your journey here:
 - **[Lesson 5: Lifecycle and Parallelism](./lessons/05-lifecycle-parallelism.md)**
 - **[Lesson 6: Fixture Inheritance and Execution Order](./lessons/06-inheritance-order.md)**
 - **[Lesson 7: Specification Fields](./lessons/07-specification-fields.md)**
+- **[Lesson 8: More Blocks (And, Cleanup, Filter)](./lessons/08-more-blocks.md)**
 
 ## How to use this repository
 

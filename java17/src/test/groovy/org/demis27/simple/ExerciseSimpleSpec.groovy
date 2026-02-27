@@ -1,9 +1,9 @@
 package org.demis27.simple
 
-import org.demis27.Fibonacci
+
 import spock.lang.Specification
 
-class ExerciceSimpleSpec extends Specification {
+class ExerciseSimpleSpec extends Specification {
 
     def 'test fibonacci - then'() {
         // TODO: Create a Fibonacci object (given)

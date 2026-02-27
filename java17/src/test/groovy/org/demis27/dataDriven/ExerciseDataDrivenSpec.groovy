@@ -3,7 +3,7 @@ package org.demis27.dataDriven
 import org.demis27.Fibonacci
 import spock.lang.Specification
 
-class ExerciceDataDrivenSpec extends Specification {
+class ExerciseDataDrivenSpec extends Specification {
 
     def 'test fibonacci - data table'() {
         given: 'I create a Fibonacci object'

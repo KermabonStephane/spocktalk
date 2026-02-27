@@ -1,9 +1,9 @@
 package org.demis27.fixture
 
-import spock.lang.Shared
+
 import spock.lang.Specification
 
-class ExerciceFieldSpec extends Specification {
+class ExerciseFieldSpec extends Specification {
 
     // TODO: Declare a simple field 'counter' initialized to 0
     // This field should be re-initialized before each feature method.

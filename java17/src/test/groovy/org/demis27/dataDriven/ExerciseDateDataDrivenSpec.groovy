@@ -3,7 +3,7 @@ package org.demis27.dataDriven
 import spock.lang.Specification
 import java.time.LocalDate
 
-class ExerciceDateDataDrivenSpec extends Specification {
+class ExerciseDateDataDrivenSpec extends Specification {
 
     def 'date plus one day #input and expected #expectedResult'() {
         when: 'add a day'

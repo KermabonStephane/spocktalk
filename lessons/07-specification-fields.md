@@ -74,18 +74,5 @@ Now it's your turn to practice using these three types of fields.
 2.  Implement the fields as described in the comments.
 3.  Add tests to verify the behavior (especially the re-initialization of simple fields vs. shared fields).
 
-## Summary of the Journey 🏁
-
-Congratulations! You have completed the Spock Framework tutorial. You now know:
-*   How to write **Specifications** and use **BDD blocks** (`given`, `when`, `then`, `expect`).
-*   How to perform **Data-Driven testing** to cover multiple scenarios with minimal code.
-*   How to use **Stubs, Mocks, and Spies** to isolate your code and verify interactions.
-*   How to handle **Exceptions** gracefully.
-*   How to manage the **Lifecycle** and **Parallelism** of your tests.
-*   How **Inheritance** affects the execution of your test fixtures.
-*   How to use **Fields** (`Simple`, `@Shared`, `static final`) to manage test state.
-
-Happy testing with Spock! 🖖
-
 ---
-[<- Previous Lesson: Fixture Inheritance and Execution Order](./06-inheritance-order.md) | [Home](../README.md)
+[<- Previous Lesson: Fixture Inheritance and Execution Order](./06-inheritance-order.md) | [Next Lesson: More Blocks ->](./08-more-blocks.md)

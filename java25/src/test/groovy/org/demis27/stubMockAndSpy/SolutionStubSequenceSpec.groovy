@@ -4,7 +4,7 @@ import org.demis27.Fibonacci
 import org.demis27.FibonacciSequence
 import spock.lang.Specification
 
-class SolutionSequenceSpec extends Specification {
+class SolutionStubSequenceSpec extends Specification {
 
     def 'test fibonacci sequence stub'() {
         given: 'Stub the fibonacci '
