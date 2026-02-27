@@ -17,6 +17,8 @@
         <spock.version>2.3-groovy-3.0</spock.version>
         <mockito.version>5.15.2</mockito.version>
         <byte-buddy.version>1.17.1</byte-buddy.version>
+        <lombok.version>1.18.40</lombok.version>
+
     </properties>
 
     <build>
