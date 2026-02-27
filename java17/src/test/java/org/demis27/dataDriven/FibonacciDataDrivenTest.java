@@ -1,17 +1,16 @@
 package org.demis27.dataDriven;
 
-import lombok.SneakyThrows;
 import org.demis27.Fibonacci;
+import org.demis27.FibonacciException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 class FibonacciDataDrivenTest {
 
-    @SneakyThrows
     @ParameterizedTest
     @CsvSource(value = {"3,2", "4,3", "5,5", "6,8"})
-    void fibonacciDataDriventTest(int input, int  expected) {
+    void fibonacciDataDriventTest(int input, int  expected) throws FibonacciException {
         // given: 'I create a Fibonacci object'
         Fibonacci fibonacci = new Fibonacci();
 

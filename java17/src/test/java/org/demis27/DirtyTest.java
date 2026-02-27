@@ -1,14 +1,12 @@
 package org.demis27;
 
-import lombok.SneakyThrows;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class DirtyTest {
 
-    @SneakyThrows
     @Test
-    void testFibonacciForTwoValuesAndTestException() {
+    void testFibonacciForTwoValuesAndTestException() throws FibonacciException {
         Fibonacci fibonacci = new Fibonacci();
         int result = fibonacci.of(6);
         Assertions.assertEquals(8, result);

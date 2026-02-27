@@ -1,8 +1,9 @@
 package org.demis27.stubMockAndSpy;
 
-import lombok.SneakyThrows;
 import org.demis27.Fibonacci;
+import org.demis27.FibonacciException;
 import org.demis27.FibonacciSequence;
+import org.demis27.FibonacciSequenceException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -14,9 +15,8 @@ import java.util.List;
 @ExtendWith(MockitoExtension.class)
 class FibonacciSequenceTest {
 
-    @SneakyThrows
     @Test
-    void fibonacciSequenceStubTest() {
+    void fibonacciSequenceStubTest() throws FibonacciException, FibonacciSequenceException {
         // given:
         Fibonacci fibonacci = Mockito.mock(Fibonacci.class);
         FibonacciSequence fibonacciSequence = new FibonacciSequence(fibonacci);
@@ -31,9 +31,8 @@ class FibonacciSequenceTest {
         Assertions.assertIterableEquals(List.of(0, 1, 1), sequence);
     }
 
-    @SneakyThrows
     @Test
-    void fibonacciSequenceMockTest () {
+    void fibonacciSequenceMockTest () throws FibonacciSequenceException, FibonacciException {
         // given:
         Fibonacci fibonacci = Mockito.mock(Fibonacci.class);
         FibonacciSequence fibonacciSequence = new FibonacciSequence(fibonacci);
@@ -49,9 +48,8 @@ class FibonacciSequenceTest {
         Assertions.assertIterableEquals(List.of(0, 1, 1), sequence);
     }
 
-    @SneakyThrows
     @Test
-    void fibonacciSequenceMockAndStubTest () {
+    void fibonacciSequenceMockAndStubTest () throws FibonacciSequenceException, FibonacciException {
         // given:
         Fibonacci fibonacci = Mockito.mock(Fibonacci.class);
         FibonacciSequence fibonacciSequence = new FibonacciSequence(fibonacci);
@@ -63,9 +61,8 @@ class FibonacciSequenceTest {
         Mockito.verify(fibonacci, Mockito.times(3)).of(Mockito.anyInt());
     }
 
-    @SneakyThrows
     @Test
-    void fibonacciSequenceSpyTest (){
+    void fibonacciSequenceSpyTest () throws FibonacciSequenceException, FibonacciException {
         // given:
         Fibonacci fibonacci = new Fibonacci();
         Fibonacci spy = Mockito.spy(fibonacci);

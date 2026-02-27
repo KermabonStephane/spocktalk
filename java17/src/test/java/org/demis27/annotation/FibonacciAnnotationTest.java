@@ -1,7 +1,7 @@
 package org.demis27.annotation;
 
-import lombok.SneakyThrows;
 import org.demis27.Fibonacci;
+import org.demis27.FibonacciException;
 import org.junit.jupiter.api.*;
 
 public class FibonacciAnnotationTest {
@@ -27,9 +27,8 @@ public class FibonacciAnnotationTest {
         fibonacci = null;
     }
 
-    @SneakyThrows
     @Test
-    void testFibonacci() {
+    void testFibonacci() throws FibonacciException {
         // given, when, then, expect, cleanup, and where
         Assertions.assertEquals(fibonacci.of(5), 5);
     }

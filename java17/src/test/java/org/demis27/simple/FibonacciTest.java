@@ -1,15 +1,14 @@
 package org.demis27.simple;
 
-import lombok.SneakyThrows;
 import org.demis27.Fibonacci;
+import org.demis27.FibonacciException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 class FibonacciTest {
 
-    @SneakyThrows
     @Test
-    void testFibonacci() {
+    void testFibonacci() throws FibonacciException {
         // given: 'I create a Fibonacci object'
         Fibonacci fibonacci = new Fibonacci();
 
@@ -20,9 +19,8 @@ class FibonacciTest {
         Assertions.assertEquals(8, result);
     }
 
-    @SneakyThrows
     @Test
-    void testFibonacciShort() {
+    void testFibonacciShort() throws FibonacciException {
         // given: 'I create a Fibonacci object'
         Fibonacci fibonacci = new Fibonacci();
 
